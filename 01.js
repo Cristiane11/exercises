@@ -4,5 +4,8 @@ var currentTime = getHours();
 var minutes= getMinutes();
 var secundos= getSeconds();
 
-console.log(`'Today is :' + today +  currentTime + ' ':+ minutes' ' +secundos `);
+var elUno = document.getElementById('uno');
+elUno.innerHTML ='<p>Today : ' + today +'</p>';
 
+var horas = document.getElementById('time');
+horas.innerHTML ='<p> Current Time:' + currentTime + minutes + secundos + '</p>';
