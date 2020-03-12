@@ -6,7 +6,12 @@ var currentDay =weekDays[day];
 var currentTime =today.getHours();
 var minutes= today.getMinutes();
 var secundos= today.getSeconds();
- 
+
+if (currentTime===0 && currentTime>=12){
+    dayTime= AM;
+}else{
+    dayTime= PM;
+}
 
 var elUno = document.getElementById('uno');
 elUno.innerHTML ='<p>Today is : ' + currentDay +'</p>';
